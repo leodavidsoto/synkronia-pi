@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: synkronia-pi
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: |
+      npm install
+      cd ../client
+      npm ci || npm install
+      npm run build
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PI_PLATFORM_API
+        value: https://api.minepi.com/v2
+      - key: PI_API_KEY
+        sync: false
+      - key: PI_APP_ID
+        sync: false
