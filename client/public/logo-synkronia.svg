@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<circle cx="250" cy="250" r="240" fill="#0d1b2a"/>
+<path d="M100 250 A150 150 0 1 1 400 250 A150 150 0 1 1 100 250" stroke="#00d4ff" stroke-width="20" fill="none"/>
+<text x="50%" y="54%" font-size="80" font-family="Arial" text-anchor="middle" fill="#ffffff">Syn</text>
+</svg>

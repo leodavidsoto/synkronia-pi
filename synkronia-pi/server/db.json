@@ -1,0 +1,8 @@
+nano db.json
+``>
+Pega:
+```json
+{
+  "cards": [],
+  "receipts": []
+}
